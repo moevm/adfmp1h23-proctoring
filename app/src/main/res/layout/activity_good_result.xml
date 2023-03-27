@@ -10,25 +10,36 @@
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/gren_l"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-189dp" />
+        android:layout_marginTop="-500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gren_l" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="273dp"
         android:layout_height="65dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="-200dp"
+        android:layout_marginEnd="69dp"
         android:text="Все этапы пройдены!"
         android:textAlignment="center"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="378dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <Button
         android:id="@+id/backButton2"
         android:layout_width="136dp"
         android:layout_height="81dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="138dp"
         android:text="В НАЧАЛО"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="612dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
