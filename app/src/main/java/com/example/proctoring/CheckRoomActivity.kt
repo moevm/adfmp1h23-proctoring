@@ -35,7 +35,7 @@ class CheckRoomActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (resultCode == RESULT_OK && ourRequestCode == requestCode){
-            /*val uri = data?.data
+            val uri = data?.data
             val retriever = MediaMetadataRetriever()
             retriever.setDataSource(applicationContext, uri);
             val time = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION)
@@ -51,7 +51,5 @@ class CheckRoomActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
-
-        */
     }
 }
