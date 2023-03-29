@@ -18,6 +18,7 @@ import androidx.activity.result.contract.ActivityResultContracts.RequestPermissi
 class MainActivity : AppCompatActivity() {
 
     var bStart: Button? = null
+    var bAbout: Button? = null
     private lateinit var plAuncher: ActivityResultLauncher<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +27,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         register()
         checkCameraPermission()
+        bAbout = findViewById(R.id.aboutButton)
+        bAbout?.setOnClickListener {
+            startActivity(Intent(this, AboutActivity::class.java))
+        }
         bStart = findViewById(R.id.bStart)
         bStart?.setOnClickListener {
             startActivity(Intent(this, ScannerActivity::class.java))

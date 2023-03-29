@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Proctoring"
         tools:targetApi="31">
         <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
             android:name=".GoodResultActivity"
             android:exported="false" />
         <activity
