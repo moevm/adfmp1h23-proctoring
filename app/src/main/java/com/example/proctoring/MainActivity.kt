@@ -9,6 +9,7 @@ import android.widget.Button
 import androidx.core.content.ContextCompat
 import android.Manifest
 import android.content.pm.PackageManager
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultLauncher
@@ -18,7 +19,7 @@ import androidx.activity.result.contract.ActivityResultContracts.RequestPermissi
 class MainActivity : AppCompatActivity() {
 
     var bStart: Button? = null
-    var bAbout: Button? = null
+    var bAbout: ImageButton? = null
     private lateinit var plAuncher: ActivityResultLauncher<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -19,8 +19,10 @@ class CheckRoomActivity : AppCompatActivity() {
         setContentView(R.layout.activity_check_room)
 
         val resultLauncher = registerForActivityResult(ActivityResultContracts.TakeVideo()){
-            val intent = Intent(this, GoodResultActivity::class.java)
-            startActivity(intent)
+            if (it != null) {
+                val intent = Intent(this, GoodResultActivity::class.java)
+                startActivity(intent)
+            }
         }
 
         cButton = findViewById(R.id.continuButton2)
