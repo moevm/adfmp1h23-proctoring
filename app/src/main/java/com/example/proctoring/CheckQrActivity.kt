@@ -8,7 +8,7 @@ import android.widget.ProgressBar
 
 class CheckQrActivity : AppCompatActivity() {
 
-    var qrContent: String? = null
+    public var qrContent: String? = null
     private var pBar: ProgressBar? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +20,7 @@ class CheckQrActivity : AppCompatActivity() {
         checkQrContent(qrContent)
     }
 
-    private fun choseActivity(res: Boolean){
+    public fun choseActivity(res: Boolean){
         if(res){
             var intent = Intent(this, CheckFaceActivity::class.java)
             startActivity(intent)
@@ -33,6 +33,7 @@ class CheckQrActivity : AppCompatActivity() {
     }
 
     public fun checkQrContent(qrContent: String?): Boolean{
+//        print("\n\n"+qrContent+"==============");
         val parts = qrContent!!.split(';')
         var res = true;
         var i = 0
