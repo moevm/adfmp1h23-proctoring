@@ -32,7 +32,8 @@ class ExampleUnitTest {
 
     @Test
     fun QrReadingIsCorrectTrueCase() {
-        val qrText = "url:http://localhost;ident:10;name:Матросов Денис Валерьевич;stud_nomer:930430;proc: rpdmp"
+        val qrText =
+            "url:http://localhost;ident:10;name:Матросов Денис Валерьевич;stud_nomer:930430;proc: rpdmp"
         val exampleActivity = spyk(CheckQrActivity())
         every { exampleActivity.startActivity(any()) } returns Unit
         assert(exampleActivity.checkQrContent(qrText))
