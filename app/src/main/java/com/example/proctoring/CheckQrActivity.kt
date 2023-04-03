@@ -33,7 +33,6 @@ class CheckQrActivity : AppCompatActivity() {
     }
 
     public fun checkQrContent(qrContent: String?): Boolean{
-//        print("\n\n"+qrContent+"==============");
         val parts = qrContent!!.split(';')
         var res = true;
         var i = 0
