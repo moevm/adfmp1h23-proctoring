@@ -18,7 +18,6 @@ class ExampleUnitTest {
     @get:Rule
     val instantExecutorRule = InstantTaskExecutorRule()
 
-
     @Test
     fun choseActivityIsCorrect() {
         val exampleActivity = spyk(CheckQrActivity())
