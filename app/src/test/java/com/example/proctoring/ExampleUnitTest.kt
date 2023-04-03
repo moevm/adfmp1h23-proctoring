@@ -19,9 +19,7 @@ class ExampleUnitTest {
     val instantExecutorRule = InstantTaskExecutorRule()
 
     @Test
-    fun addition_isCorrect() {
 
-    }
 
     @Test
     fun choseActivityIsCorrect() {
