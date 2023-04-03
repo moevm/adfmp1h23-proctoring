@@ -32,7 +32,7 @@ class CheckQrActivity : AppCompatActivity() {
         }
     }
 
-    private fun checkQrContent(qrContent: String?){
+    public fun checkQrContent(qrContent: String?): Boolean{
         val parts = qrContent!!.split(';')
         var res = true;
         var i = 0
@@ -72,5 +72,6 @@ class CheckQrActivity : AppCompatActivity() {
             res = false
         }
         choseActivity(res)
+        return res;
     }
 }
