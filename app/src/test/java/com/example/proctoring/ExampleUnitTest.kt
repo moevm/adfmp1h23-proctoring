@@ -18,8 +18,6 @@ class ExampleUnitTest {
     @get:Rule
     val instantExecutorRule = InstantTaskExecutorRule()
 
-    @Test
-
 
     @Test
     fun choseActivityIsCorrect() {
