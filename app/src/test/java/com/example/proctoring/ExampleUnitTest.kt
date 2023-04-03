@@ -19,11 +19,6 @@ class ExampleUnitTest {
     val instantExecutorRule = InstantTaskExecutorRule()
 
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
-    }
-
-    @Test
     fun choseActivityIsCorrect() {
         val exampleActivity = spyk(CheckQrActivity())
         every { exampleActivity.startActivity(any()) } returns Unit
