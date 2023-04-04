@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         }
         bStart = findViewById(R.id.bStart)
         bStart?.setOnClickListener {
-            startActivity(Intent(this, ScannerActivity::class.java))
+            startActivity(Intent(this, InfoActivity::class.java))
         }
     }
 
