@@ -1,22 +1,22 @@
 package com.example.proctoring
 
-import android.content.Intent
-import androidx.core.content.ContextCompat.startActivity
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.intent.Intents
+import androidx.test.espresso.intent.Intents.intended
+import androidx.test.espresso.intent.matcher.IntentMatchers.hasComponent
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
-import androidx.test.espresso.intent.Intents.intended
-import androidx.test.espresso.intent.matcher.IntentMatchers.hasComponent
 import org.junit.Assert.*
 import org.junit.BeforeClass
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+
+
 //import kotlin.coroutines.jvm.internal.CompletedContinuation.context
 
 
@@ -26,7 +26,7 @@ import org.junit.runner.RunWith
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 @RunWith(AndroidJUnit4::class)
-class InstrumentedTest {
+class InstrumentedTestPart1 {
 
 
     @get:Rule
@@ -62,8 +62,13 @@ class InstrumentedTest {
             .perform(click())
         intended(hasComponent(ScannerActivity::class.java.name))
 //
-//        val intent = Intent(, CheckFaceActivity::class.java)
-//        startActivity(intent)
+//        val intent = Intent(
+//            getApplicationContext<Context>(),
+//            CheckFaceActivity::class.java
+//        )
+//        context.startActivity(intent)
+////        val intent = Intent( ,CheckFaceActivity::class.java)
+////        startActivity(intent)
     }
 
     @Test
